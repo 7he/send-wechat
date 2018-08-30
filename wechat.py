@@ -24,7 +24,7 @@ def send_news():
 
         # 你朋友的微信名称，不是备注，也不是微信帐号。
 
-        my_friend = bot.friends().search(u'撒旦')[0]
+        my_friend = bot.friends().search(u'friend_name')[0]
         # my_friend.send(contents[0])
         # my_friend.send(contents[1])
         my_friend.send(u"Have a good one!")
@@ -37,7 +37,7 @@ def send_news():
 
         # 你的微信名称，不是微信帐号。
 
-        my_friend = bot.friends().search('淡水咸鱼')[0]
+        my_friend = bot.friends().search('my_name')[0]
         my_friend.send(u"今天消息发送失败了")
 
 if __name__ == "__main__":
